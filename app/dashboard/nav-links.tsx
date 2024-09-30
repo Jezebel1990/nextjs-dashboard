@@ -12,6 +12,12 @@ import {
   export default function NavLinks() {
     const pathname = usePathname();
 
+    const links = [
+      { icon: HomeIcon, name: "Home", href: "/" },
+      { icon: UserGroupIcon, name: "Users", href: "/users" },
+      { icon: DocumentDuplicateIcon, name: "Documents", href: "/documents" },
+  ];
+
     return (
       <>
         {links.map((link) => {
